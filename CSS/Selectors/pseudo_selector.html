@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <style>
+        .info{
+            color: rgb(89, 68, 91);
+            font-size: 14px;
+        }
+        input:valid {
+            background-color: rgb(219, 245, 219);
+        }
+        input:invalid {
+            background-color: rgb(255, 189, 189);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="email">Email address</label><br>
+        <input type="email" id="email" required placeholder="A valid email, like name@domain.com" aria-describedby="emailinfo" />
+        <p class="info" id="emailinfo"><i>Add a valid email address to see the state change</i></p>
+    </form>
+</body>
+</html>
