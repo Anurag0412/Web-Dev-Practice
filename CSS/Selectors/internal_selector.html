@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* class selector */
+        .red{
+            background-color: rgb(251, 122, 122);
+        }
+        /* ID Selector */
+        #blue{
+            background-color: rgb(168, 168, 247);
+        }
+        /* Child Selector */
+        header > h1{
+            color:crimson;
+        }
+        /* Descendant Selector */
+        body span{
+            color: rgb(3, 88, 88);
+        }
+        /* Universal Selector*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Pseudo-selectors */
+        a:visited{
+            color:rgb(86, 0, 86);
+        }
+        a:link{
+            color:burlywood;
+        }
+        a:active{
+            background-color: rgb(86, 0, 86);
+        }
+        a:hover{
+            background-color: rgb(168, 168, 247);
+        }
+        h2:first-child{
+            font-size: 35px;
+        }
+         a:last-child{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+    <main>
+        <h2 class="red">Internal CSS</h2>
+        <p id="blue">
+            Internal CSS is defined within a &lt;style&gt; element in the &lt;head&gt; section of an HTML document. 
+            It allows you to apply styles to specific elements on a single page without affecting other pages.
+        </p>
+        <span>
+            Internal CSS is useful when you want to apply styles to a specific page without creating an external stylesheet. 
+            It can be used for quick styling or when you have a small amount of CSS that is only relevant to that page.
+        </span>
+        <br>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        
+    </main>
+</body>
+</html>
